@@ -1,0 +1,13 @@
+/* #Base
+--------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--primary);
+}
+
+::-moz-selection {
+  background: var(--primary);
+}
