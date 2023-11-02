@@ -4,9 +4,12 @@
   /* Colors */
   --black: #090909;
   --white: #fffffb;
+
+  --cream-can: #F1C54C;
+  --persian-indigo: #35093E;
   
-  --primary: var(--black);
-  --secondary: var(--black);
+  --primary: var(--cream-can);
+  --secondary: var(--persian-indigo);
 
   /* Fonts */
   --bold: "Titillium Web", sans-serif;
@@ -18,7 +21,7 @@
   --spacing-title: 1em;
 
   /* Radius */
-  --border-radius: 3px;
+  --border-radius: 4px;
 }
 
 @media screen and (min-width: 768px) {

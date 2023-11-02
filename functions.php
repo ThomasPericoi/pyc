@@ -56,8 +56,10 @@ function register_menus()
 {
     register_nav_menus(
         array(
-            'header-menu' => __('Header Menu', 'usefool'),
-            'sub-footer-menu' =>  __('Sub-footer Menu', 'usefool'),
+            'header-menu' => __('Header Menu', 'pyc'),
+            'sub-footer-menu-1' =>  __('Sub-footer Menu 1', 'pyc'),
+            'sub-footer-menu-2' =>  __('Sub-footer Menu 2', 'pyc'),
+            'sub-footer-menu-3' =>  __('Sub-footer Menu 3', 'pyc'),
         )
     );
 }

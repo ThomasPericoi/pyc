@@ -15,8 +15,56 @@
 
 #header .custom-logo {
     width: 100%;
-    max-width: 135px;
+    max-width: 86px;
     height: auto;
+}
+
+/* Menu Desktop */
+#header .menu-header {
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    background-color: unset;
+    transition: opacity ease 350ms;
+}
+
+@media screen and (min-width: 1200px) {
+    #header .menu-header {
+        display: flex;
+    }
+}
+
+.menu-header li a {
+    width: unset;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--black);
+    font-weight: 600;
+    font-family: var(--bold);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color ease 350ms;
+}
+
+@media screen and (min-width: 1200px) {
+    #header .menu-header>li>a {
+        padding: 2rem 1em;
+        font-size: 1em;
+    }
+}
+
+#header .menu-header li a+.sub-menu {
+    display: none;
+}
+
+/* Menu Mobile */
+@media screen and (min-width: 1200px) {
+    .menu-toggle-col {
+        display: none;
+    }
 }
 
 /* Toggle */

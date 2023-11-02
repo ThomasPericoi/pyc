@@ -29,6 +29,7 @@ Text Domain: pyc
 /* #Elements
 --------------------------------------------------------------- */
 
+@import "./assets/css/elements/buttons.css";
 @import "./assets/css/elements/containers.css";
 @import "./assets/css/elements/footer.css";
 @import "./assets/css/elements/header.css";

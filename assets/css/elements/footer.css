@@ -1,5 +1,42 @@
 /* #Footer
 --------------------------------------------------------------- */
+#footer {
+    width: 100%;
+    padding: var(--spacing-section-inner) 0;
+    position: relative;
+    background-color: var(--secondary);
+}
+
+#footer .custom-logo {
+    width: 100%;
+    max-width: 86px;
+    height: auto;
+}
+
+/* Main footer */
+#main-footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    #main-footer .container {
+        flex-direction: row;
+    }
+}
+
+#main-footer .menu-sub-footer h3 {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+#main-footer .menu-sub-footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+
 /* Sub footer */
 .dyslexic-toggle {
     font-family: 'OpenDyslexic', sans-serif;
@@ -9,6 +46,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    color: var(--primary);
     cursor: pointer;
 }
 
@@ -22,16 +60,16 @@
     height: 14px;
     display: inline-block;
     background-color: transparent;
-    border: 2px solid var(--black);
+    border: 2px solid var(--primary);
     border-radius: 50%;
     transition: background-color ease 350ms;
 }
 
 .dyslexic-toggle input:checked+label:before {
-    background-color: var(--black);
+    background-color: var(--primary);
 }
 
 .dyslexic-toggle input:focus+label {
-    outline: dashed 1px var(--black);
+    outline: dashed 1px var(--primary);
     outline-offset: 6px;
 }

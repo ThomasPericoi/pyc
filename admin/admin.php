@@ -6,15 +6,15 @@
 // Add options page
 if (function_exists('acf_add_options_page')) {
     acf_add_options_page(array(
-        'page_title'    => __('Theme options', 'usefool'),
-        'menu_title'    => __('Theme options', 'usefool'),
+        'page_title'    => __('Theme options', 'pyc'),
+        'menu_title'    => __('Theme options', 'pyc'),
         'menu_slug'     => 'options',
         'capability'    => 'edit_pages',
         'redirect'      => true,
         'position'      => 2,
-        'update_button' => __('Update', 'usefool'),
-        'updated_message' => __('All good', 'usefool'),
-        'icon_url'      => 'dashicons-info'
+        'update_button' => __('Update', 'pyc'),
+        'updated_message' => __('All good', 'pyc'),
+        'icon_url'      => 'dashicons-admin-tools'
     ));
 }
 
@@ -24,7 +24,7 @@ if (function_exists('acf_add_options_page')) {
 // Register post types
 function register_custom_post_types()
 {
-    $post_types = ["sample"];
+    $post_types = ["feature"];
 
     foreach ($post_types as $post_type) {
         include_once(__DIR__ . '/post-types/' . $post_type . '.php');
@@ -39,7 +39,7 @@ function register_custom_taxonomy()
         'sample',
         array('post', 'page'),
         array(
-            'label' => __('Sample taxonomy', 'usefool'),
+            'label' => __('Sample taxonomy', 'pyc'),
             'public' => false,
             'show_ui' => true,
             'show_in_menu' => true,
@@ -72,7 +72,7 @@ function register_block_category($categories, $post)
         array(
             array(
                 'slug' => 'sample-category',
-                'title' => __('Sample category', 'usefool'),
+                'title' => __('Sample category', 'pyc'),
             ),
         )
     );
