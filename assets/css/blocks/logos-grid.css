@@ -1,0 +1,30 @@
+/* #Logos grid block
+--------------------------------------------------------------- */
+.logos-grid-block {
+    padding: var(--spacing-section-outer) 0;
+    position: relative;
+    text-align: center;
+}
+
+.logos-grid-block .logos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+    .logos-grid-block .logos {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3rem;
+    }
+}
+
+.logos-grid-block .logos>img {
+    width: 100%;
+    max-width: 165px;
+    height: auto;
+    display: block;
+}

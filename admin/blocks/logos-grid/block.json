@@ -1,0 +1,13 @@
+{
+    "name": "acf/logos-grid",
+    "title": "Logos grid",
+    "description": "A grid of logos, to display clients for example.",
+    "category": "pyc-block",
+    "icon": "grid-view",
+    "keywords": [
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "logos-grid.php"
+    }
+}

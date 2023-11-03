@@ -39,12 +39,6 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
-  .container-sm {
-    max-width: 1200px;
-  }
-}
-
 /* Large */
 @media screen and (min-width: 992px) {
   .container-lg {

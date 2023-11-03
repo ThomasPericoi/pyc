@@ -37,6 +37,8 @@ Text Domain: pyc
 /* #Blocks
 --------------------------------------------------------------- */
 
+@import "./assets/css/blocks/logos-grid.css";
+
 /* #Template Parts
 --------------------------------------------------------------- */
 
@@ -45,3 +47,4 @@ Text Domain: pyc
 
 /* #Pages
 --------------------------------------------------------------- */
+@import "./assets/css/pages/front-page.css";

@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0.5em;
+    gap: 1.5em;
 }
 
 @media screen and (min-width: 768px) {
@@ -15,8 +15,8 @@
 }
 
 .btn {
-    height: 40px;
-    padding: 0.35rem 1.4rem;
+    height: 30px;
+    padding: 0.4rem 1.4rem;
     box-sizing: content-box;
     position: relative;
     display: inline-flex;
@@ -26,30 +26,53 @@
     font-size: 1em;
     font-family: var(--bold);
     font-weight: 400;
-    color: var(--black);
+    color: var(--secondary);
     border: 0;
     border-radius: var(--border-radius);
     cursor: pointer;
+    transition: color ease 250ms, background-color ease 250ms, border ease 250ms;
 }
 
-/* Primary */
+/* Full */
 .btn.btn-primary {
-    background-color: var(--primary);
     color: var(--secondary);
+    background-color: var(--primary);
 }
 
-/* Secondary */
 .btn.btn-secondary {
-    background-color: var(--secondary);
     color: var(--primary);
+    background-color: var(--secondary);
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-secondary:hover,
+.btn.btn-secondary:focus {
+    color: var(--secondary);
+    background-color: var(--white);
 }
 
 /* Outline */
 .btn-outline-dark,
 .btn-outline-light {
-    border: 1px solid var(--primary);
+    background-color: transparent;
+    border: 1.5px solid var(--primary);
 }
 
 .btn-outline-light {
     color: var(--white);
+}
+
+.btn.btn-outline-dark:hover,
+.btn.btn-outline-dark:focus,
+.btn.btn-outline-light:hover,
+.btn.btn-outline-light:focus {
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+
+/* Size */
+.btn-lg {
+    height: 50px;
+    padding: 0.4rem 2.5rem;
 }

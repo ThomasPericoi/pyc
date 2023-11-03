@@ -40,7 +40,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
     color: var(--black);
     font-weight: 600;
     font-family: var(--bold);
@@ -58,6 +58,32 @@
 
 #header .menu-header li a+.sub-menu {
     display: none;
+}
+
+#header .btn-wrapper {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    #header .btn-wrapper {
+        display: inherit;
+    }
+}
+
+#header .menu-header li.menu-item-has-children a:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-size: 20px 20px;
+    background-image: url(../../icons/chevron-right.svg);
+    transform: rotate(0deg);
+    transition: transform ease 350ms;
+}
+
+#header .menu-header li.menu-item-has-children a:hover:after,
+#header .menu-header li.menu-item-has-children a:focus:after {
+    transform: rotate(90deg);
 }
 
 /* Menu Mobile */
@@ -102,7 +128,7 @@
 }
 
 #menu-toggle:focus+div {
-    outline: dashed 1px var(--black);
+    outline: dashed 1px var(--secondary);
     outline-offset: 6px;
 }
 
@@ -123,7 +149,7 @@
     height: 2px;
     position: absolute;
     display: block;
-    background-color: var(--black);
+    background-color: var(--secondary);
 }
 
 .menu-toggle-open>span:before,

@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Header - Menu
-  document.querySelectorAll(".menu-header-desktop>li>a").forEach(function (item) {
+  document.querySelectorAll("header .menu-header>li>a").forEach(function (item) {
     item.tabIndex = 0;
   });
 }); 
