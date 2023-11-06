@@ -44,7 +44,7 @@
             "name": "title",
             "aria-label": "",
             "type": "text",
-            "instructions": "",
+            "instructions": "The title will be rendered as a h2.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -64,7 +64,7 @@
             "name": "subtitle",
             "aria-label": "",
             "type": "textarea",
-            "instructions": "",
+            "instructions": "The subtitle will be rendered as a p.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -84,7 +84,7 @@
             "name": "logos",
             "aria-label": "",
             "type": "gallery",
-            "instructions": "",
+            "instructions": "To be optimal, upload the logos in svg.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -143,5 +143,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699030248
+    "modified": 1699263051
 }

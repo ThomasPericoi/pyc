@@ -198,3 +198,33 @@ h6,
     font-weight: 400;
   }
 }
+
+main a:not([class]) {
+  width: unset;
+  position: relative;
+  font-weight: 600;
+  color: var(--secondary);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color ease 350ms;
+}
+
+main a:not([class]):before {
+  content: "";
+  top: 35%;
+  right: -1px;
+  bottom: 0;
+  left: -1px;
+  display: block;
+  position: absolute;
+  background-color: var(--primary);
+  z-index: -1;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform ease 350ms;
+}
+
+main a:not([class]):hover:before,
+main a:not([class]):focus:before {
+  transform: scaleX(1);
+}

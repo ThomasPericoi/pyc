@@ -11,3 +11,9 @@ html {
 ::-moz-selection {
   background: var(--primary);
 }
+
+main {
+  animation: fadeIn ease 850ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}

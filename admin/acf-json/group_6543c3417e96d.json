@@ -25,7 +25,7 @@
             "name": "home_title",
             "aria-label": "",
             "type": "text",
-            "instructions": "Leave empty to display the website's title.",
+            "instructions": "Leave empty to display the website's title. The title will be rendered as a h1.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -45,7 +45,7 @@
             "name": "home_description",
             "aria-label": "",
             "type": "textarea",
-            "instructions": "Leave empty to display the website's description. Break line to create a <br>.",
+            "instructions": "Leave empty to display the website's description. The description will be rendered as a p.\r\nBreak line to create a br.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -55,7 +55,7 @@
             },
             "default_value": "",
             "maxlength": "",
-            "rows": 4,
+            "rows": 3,
             "placeholder": "",
             "new_lines": "br"
         },
@@ -135,5 +135,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698940902
+    "modified": 1699262991
 }
