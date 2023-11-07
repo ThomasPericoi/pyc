@@ -1,0 +1,23 @@
+/* #404
+--------------------------------------------------------------- */
+#not-found-hero {
+    padding: var(--spacing-section-outer) 0;
+    color: var(--white);
+    text-align: center;
+    background-color: var(--secondary);
+}
+
+#not-found-hero .description {
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    #not-found-hero .description {
+        font-size: 35px;
+    }
+}
+
+#not-found-hero .btn-wrapper {
+    margin-top: var(--spacing-section-inner);
+}

@@ -48,4 +48,5 @@ Text Domain: pyc
 
 /* #Pages
 --------------------------------------------------------------- */
+@import "./assets/css/pages/404.css";
 @import "./assets/css/pages/front-page.css";
