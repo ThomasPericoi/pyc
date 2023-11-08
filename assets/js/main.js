@@ -21,13 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(':root').style.setProperty('--body', "OpenDyslexic, sans-serif");
     document.querySelector(':root').style.setProperty('--bold', "OpenDyslexic, sans-serif");
     sessionStorage.setItem("dyslexicMode", true);
-    console.log("OpenDyslexic est activé");
+    console.log("OpenDyslexic is enabled");
   }
   function disableDyslexicMode() {
     document.querySelector(':root').style.setProperty('--body', "Titillium Web, sans-serif");
     document.querySelector(':root').style.setProperty('--bold', "Titillium Web, sans-serif");
     sessionStorage.setItem("dyslexicMode", false);
-    console.log("OpenDyslexic est désactivé");
+    console.log("OpenDyslexic is disabled");
   }
   if (sessionStorage.getItem("dyslexicMode") == "true") {
     enableDyslexicMode();
@@ -83,5 +83,25 @@ document.addEventListener("DOMContentLoaded", function () {
   // Header - Menu
   document.querySelectorAll("header .menu-header>li>a").forEach(function (item) {
     item.tabIndex = 0;
+  });
+
+  document.querySelectorAll(".menu-toggle").forEach(function (item) {
+    item.addEventListener("click", function () {
+      document.querySelector("body").classList.toggle("js-menuOpened");
+      document.querySelector("main").toggleAttribute("inert");
+      document.querySelector("main").setAttribute("aria-hidden", !(document.querySelector("main").getAttribute("aria-hidden") == "true" ? true : false));
+      document.querySelector(".super-menu").toggleAttribute("inert");
+      document.querySelector(".super-menu").setAttribute("aria-hidden", !(document.querySelector(".super-menu").getAttribute("aria-hidden") == "true" ? true : false));
+      document.querySelector("footer").toggleAttribute("inert");
+      document.querySelector("footer").setAttribute("aria-hidden", !(document.querySelector("footer").getAttribute("aria-hidden") == "true" ? true : false));
+    });
+  });
+
+  document.querySelectorAll("#menu-toggle").forEach(function (item) {
+    item.addEventListener('keydown', (event) => {
+      if (event.code === 'Enter') {
+        item.click();
+      }
+    });
   });
 }); 

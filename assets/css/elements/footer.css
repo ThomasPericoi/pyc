@@ -37,7 +37,8 @@
     transition: transform ease 350ms;
 }
 
-#main-footer .socials .social:hover {
+#main-footer .socials .social:hover,
+#main-footer .socials .social:focus {
     transform: rotate(12deg);
 }
 
@@ -102,7 +103,8 @@
     cursor: pointer;
 }
 
-.dyslexic-toggle label:hover {
+.dyslexic-toggle label:hover,
+.dyslexic-toggle label:focus {
     text-decoration: underline;
 }
 
