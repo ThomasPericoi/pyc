@@ -72,7 +72,7 @@ function register_block_category($categories, $post)
         array(
             array(
                 'slug' => 'pyc-block',
-                'title' => __('Pyc theme', 'pyc'),
+                'title' => __('Pyc', 'pyc'),
             ),
         )
     );

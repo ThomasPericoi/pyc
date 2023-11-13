@@ -23,7 +23,20 @@
     margin-top: var(--spacing-section-inner);
 }
 
-#home-hero img {
+#home-hero .certifications {
+    margin-top: var(--spacing-section-inner);
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+#home-hero .certification img {
+    width: 100%;
+    max-height: 30px;
+    display: block;
+}
+
+#home-hero .cover {
     width: 100%;
     margin: var(--spacing-section-inner) auto 0 auto;
     display: block;

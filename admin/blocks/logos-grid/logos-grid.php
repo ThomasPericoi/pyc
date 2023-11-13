@@ -37,8 +37,8 @@ $style  = implode('; ', $styles);
         $logos = get_field('logos');
         if ($logos) : ?>
             <div class="logos">
-                <?php foreach ($logos as $logos_id) : ?>
-                    <?php echo wp_get_attachment_image($logos_id, "full"); ?>
+                <?php foreach ($logos as $logo_id) : ?>
+                    <?php echo wp_get_attachment_image($logo_id, "full"); ?>
                 <?php endforeach; ?>
             </div>
         <?php endif; ?>

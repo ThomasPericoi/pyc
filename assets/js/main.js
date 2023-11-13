@@ -16,6 +16,23 @@ document.addEventListener("DOMContentLoaded", function () {
   // General - Enable ASCII Printer on random
   printRandomAscii();
 
+  // General - Change tab name on blur
+  if (!isMobile()) {
+    originalTitle = document.title;
+
+    window.addEventListener("focus", () => {
+      document.title = originalTitle;
+    });
+
+    window.addEventListener("blur", () => {
+      document.title = "🎶🎶🎶";
+
+      setTimeout(function () {
+        document.title = originalTitle;
+      }, 450);
+    });
+  }
+
   // General - Enable OpenDyslexic toggle
   function enableDyslexicMode() {
     document.querySelector(':root').style.setProperty('--body', "OpenDyslexic, sans-serif");
@@ -78,6 +95,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   document.querySelectorAll("main section").forEach(function (item, index) {
     markAsViewed(item, item);
+  });
+
+  // Element - Vidéo
+  document.querySelectorAll("video").forEach(function (item, index) {
+    item.addEventListener("click", function () {
+      item.nextElementSibling.style.display = 'none';
+      item.setAttribute("controls", "");
+    });
+
+    item.addEventListener('keydown', (event) => {
+      if (event.code === 'Enter') {
+        item.nextElementSibling.style.display = 'none';
+        item.setAttribute("controls", "");
+      }
+    });
   });
 
   // Header - Menu
