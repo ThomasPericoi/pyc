@@ -75,7 +75,8 @@
     text-decoration: none;
 }
 
-#main-footer .menu-sub-footer a:hover {
+#main-footer .menu-sub-footer a:hover,
+#main-footer .menu-sub-footer a:focus {
     text-decoration: underline;
 }
 
@@ -86,7 +87,8 @@
     text-decoration: none;
 }
 
-.copyright a:hover {
+.copyright a:hover,
+.copyright a:focus {
     text-decoration: underline;
 }
 

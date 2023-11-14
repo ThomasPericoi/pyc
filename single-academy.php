@@ -4,23 +4,20 @@
 <?php
 $title = get_the_title();
 $description = get_the_excerpt();
+$video = get_field("academy_video");
 ?>
-<section id="single-post-hero">
+<section id="single-academy-hero">
     <div class="container container-sm">
-        <?php
-        $cat = get_the_category();
-        $cat_name = $cat[0]->cat_name;
-        $cat_link = get_category_link($cat[0]->cat_ID);
-        ?>
-        <?php if ($cat) : ?>
-            <a href="<?php echo $cat_link; ?>" class="category"><?php echo $cat_name; ?></a>
-        <?php endif; ?>
         <h1><?php echo $title; ?></h1>
         <?php if ($description) : ?>
             <p class="description"><?php echo $description; ?></p>
         <?php endif; ?>
-        <?php if (has_post_thumbnail()) : ?>
-            <?php the_post_thumbnail("full", array('class' => 'cover')); ?>
+        <?php if ($video) : ?>
+            <div class="video-wrapper cover">
+                <video src="<?php echo $video["url"]; ?>" tabindex="0">
+                </video>
+                <div class="play"></div>
+            </div>
         <?php endif; ?>
     </div>
 </section>
@@ -35,35 +32,30 @@ $description = get_the_excerpt();
 <!-- Related -->
 <?php $related = get_posts(array(
     'numberposts' => 3,
+    'post_type' => 'academy',
     'post__not_in' => array($post->ID)
 )); ?>
 
 <?php if ($related) : ?>
     <section id="related">
         <div class="container">
-            <h2><?php echo __("Latest posts", "pyc"); ?></h2>
-            <div class="post-grid grid-3 posts">
+            <h2><?php echo __("Other Academy", "pyc"); ?></h2>
+            <div class="post-grid grid-3 academy">
                 <?php foreach ($related as $post) :
                     setup_postdata($post); ?>
-                    <?php
-                    $categories = get_the_category();
-                    $category_name = $categories[0]->cat_name;
-                    ?>
-                    <a href="<?php esc_url(the_permalink()); ?>" class="grid-element post">
+                    <a href="<?php esc_url(the_permalink()); ?>" class="grid-element faq">
                         <?php if (has_post_thumbnail()) : ?>
-                            <div class="image">
+                            <div class="image video-wrapper">
                                 <?php the_post_thumbnail(); ?>
+                                <div class="play"></div>
                             </div>
                         <?php endif; ?>
                         <div class="content">
                             <h2 class="h4-size"><?php echo get_the_title(); ?></h2>
-                            <?php if ($categories) : ?>
-                                <span class="category"><?php echo __("Posted in ", "pyc"); ?><?php echo $category_name; ?></span>
-                            <?php endif; ?>
                             <?php if (has_excerpt()) : ?>
                                 <p><?php echo get_the_excerpt(); ?></p>
                             <?php endif; ?>
-                            <div class="label"><?php echo __("Read more", "pyc"); ?></div>
+                            <div class="label"><?php echo __("Learn", "pyc"); ?></div>
                         </div>
                     </a>
                 <?php endforeach; ?>

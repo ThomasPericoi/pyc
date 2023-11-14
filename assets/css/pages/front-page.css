@@ -44,6 +44,7 @@
     opacity: 1;
 }
 
-#home-hero .certification:hover img {
+#home-hero .certification:hover img,
+#home-hero .certification:focus img {
     transform: scale(1.05);
 }
