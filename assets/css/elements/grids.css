@@ -1,0 +1,82 @@
+/* #Grids
+--------------------------------------------------------------- */
+/* Post grid */
+.post-grid {
+    padding: var(--spacing-section-outer) 0;
+    display: grid;
+    grid-gap: 2rem;
+    align-items: stretch;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media screen and (min-width: 992px) {
+    .post-grid.grid-1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .post-grid.grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .post-grid.grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.post-grid .grid-element {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--black);
+    text-decoration: none;
+    border: 2px solid var(--secondary);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.post-grid .grid-element .image {
+    width: 100%;
+    border-bottom: 2px solid var(--secondary);
+}
+
+.post-grid .grid-element .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-grid .grid-element .content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 1;
+}
+
+.post-grid .grid-element .category {
+    display: block;
+    font-weight: 600;
+    font-family: var(--bold);
+}
+
+.post-grid .grid-element .label {
+    color: var(--primary);
+    font-weight: 600;
+    font-family: var(--bold);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.post-grid .grid-element .label:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-image: url(../../icons/arrow-right.svg);
+    background-size: 20px 20px;
+    transform: translateX(0);
+    transition: transform ease 350ms;
+}

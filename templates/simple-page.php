@@ -1,8 +1,15 @@
-<?php /* Template Name: Page simple (sans bloc) */
+<?php /* Template Name: Simple page (no block) */
 get_header(); ?>
 
-<!-- Content -->
-<section>
+<?php get_template_part(
+    'template-parts/hero',
+    'full',
+    array(
+        'id' => "page-hero",
+    )
+); ?>
+
+<section id="content">
     <div class="container formatted">
         <?php the_content(); ?>
     </div>

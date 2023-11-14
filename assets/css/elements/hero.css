@@ -1,0 +1,41 @@
+/* #Hero
+--------------------------------------------------------------- */
+[id*="hero"] {
+    padding: var(--spacing-section-outer) 0;
+    color: var(--white);
+    text-align: center;
+    background-color: var(--secondary);
+}
+
+[id*="hero"] .category {
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+[id*="hero"] .description {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    [id*="hero"] .description {
+        font-size: 35px;
+    }
+}
+
+[id*="hero"] .btn-wrapper {
+    margin-top: var(--spacing-section-inner);
+}
+
+[id*="hero"] .cover {
+    width: 100%;
+    height: auto;
+    margin: var(--spacing-section-inner) auto 0 auto;
+    display: block;
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+}

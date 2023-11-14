@@ -33,13 +33,16 @@ Text Domain: pyc
 @import "./assets/css/elements/buttons.css";
 @import "./assets/css/elements/containers.css";
 @import "./assets/css/elements/footer.css";
+@import "./assets/css/elements/grids.css";
 @import "./assets/css/elements/header.css";
+@import "./assets/css/elements/hero.css";
 @import "./assets/css/elements/medias.css";
 
 /* #Blocks
 --------------------------------------------------------------- */
 
 @import "./assets/css/blocks/logos-grid.css";
+@import "./assets/css/blocks/triptych.css";
 
 /* #Template Parts
 --------------------------------------------------------------- */
@@ -51,3 +54,4 @@ Text Domain: pyc
 --------------------------------------------------------------- */
 @import "./assets/css/pages/404.css";
 @import "./assets/css/pages/front-page.css";
+@import "./assets/css/pages/page.css";

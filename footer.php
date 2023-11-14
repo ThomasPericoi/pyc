@@ -30,18 +30,24 @@ $button = get_field('footer_button', 'option'); ?>
                 </div>
             </div>
             <div class="menus">
-                <div class="menu menu-sub-footer">
-                    <h3 class="h5-size"><?php echo wp_get_nav_menu_object($locations['sub-footer-menu-1'])->name; ?></h3>
-                    <?php wp_nav_menu(array('theme_location' => 'sub-footer-menu-1', 'container' => false, 'depth' => 1)); ?>
-                </div>
-                <div class="menu menu-sub-footer">
-                    <h3 class="h5-size"><?php echo wp_get_nav_menu_object($locations['sub-footer-menu-2'])->name; ?></h3>
-                    <?php wp_nav_menu(array('theme_location' => 'sub-footer-menu-2', 'container' => false, 'depth' => 1)); ?>
-                </div>
-                <div class="menu menu-sub-footer">
-                    <h3 class="h5-size"><?php echo wp_get_nav_menu_object($locations['sub-footer-menu-3'])->name; ?></h3>
-                    <?php wp_nav_menu(array('theme_location' => 'sub-footer-menu-3', 'container' => false, 'depth' => 1)); ?>
-                </div>
+                <?php if (has_nav_menu('sub-footer-menu-1')) : ?>
+                    <div class="menu menu-sub-footer">
+                        <h3 class="h5-size"><?php echo wp_get_nav_menu_object($locations['sub-footer-menu-1'])->name; ?></h3>
+                        <?php wp_nav_menu(array('theme_location' => 'sub-footer-menu-1', 'container' => false, 'depth' => 1)); ?>
+                    </div>
+                <?php endif; ?>
+                <?php if (has_nav_menu('sub-footer-menu-2')) : ?>
+                    <div class="menu menu-sub-footer">
+                        <h3 class="h5-size"><?php echo wp_get_nav_menu_object($locations['sub-footer-menu-2'])->name; ?></h3>
+                        <?php wp_nav_menu(array('theme_location' => 'sub-footer-menu-2', 'container' => false, 'depth' => 1)); ?>
+                    </div>
+                <?php endif; ?>
+                <?php if (has_nav_menu('sub-footer-menu-3')) : ?>
+                    <div class="menu menu-sub-footer">
+                        <h3 class="h5-size"><?php echo wp_get_nav_menu_object($locations['sub-footer-menu-3'])->name; ?></h3>
+                        <?php wp_nav_menu(array('theme_location' => 'sub-footer-menu-3', 'container' => false, 'depth' => 1)); ?>
+                    </div>
+                <?php endif; ?>
             </div>
             <?php if ($button) :
                 $button_url = $button['url'];

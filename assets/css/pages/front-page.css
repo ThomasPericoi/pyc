@@ -2,25 +2,7 @@
 --------------------------------------------------------------- */
 /* Hero */
 #home-hero {
-    padding-top: var(--spacing-section-outer);
-    color: var(--white);
-    text-align: center;
-    background-color: var(--secondary);
-}
-
-#home-hero .description {
-    margin-top: 8px;
-    font-size: 20px;
-}
-
-@media screen and (min-width: 768px) {
-    #home-hero .description {
-        font-size: 35px;
-    }
-}
-
-#home-hero .btn-wrapper {
-    margin-top: var(--spacing-section-inner);
+    padding-bottom: 0;
 }
 
 #home-hero .certifications {
@@ -32,13 +14,36 @@
 
 #home-hero .certification img {
     width: 100%;
-    max-height: 30px;
+    max-height: 35px;
     display: block;
+    opacity: 0;
+    transition: transform ease 350ms, opacity ease 350ms;
 }
 
-#home-hero .cover {
-    width: 100%;
-    margin: var(--spacing-section-inner) auto 0 auto;
-    display: block;
-    border-radius: var(--border-radius);
+#home-hero .certification:nth-child(1) img {
+    transition-delay: 200ms;
+}
+
+#home-hero .certification:nth-child(2) img {
+    transition-delay: 400ms;
+}
+
+#home-hero .certification:nth-child(3) img {
+    transition-delay: 600ms;
+}
+
+#home-hero .certification:nth-child(4) img {
+    transition-delay: 800ms;
+}
+
+#home-hero .certification:nth-child(n+5) img {
+    transition-delay: 1000ms;
+}
+
+#home-hero.js-viewed .certification img {
+    opacity: 1;
+}
+
+#home-hero .certification:hover img {
+    transform: scale(1.05);
 }

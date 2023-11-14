@@ -32,31 +32,13 @@ function register_custom_post_types()
 }
 add_action('init', 'register_custom_post_types');
 
-// Add custom landing page taxonomy
-function register_custom_taxonomy()
-{
-    register_taxonomy(
-        'sample',
-        array('post', 'page'),
-        array(
-            'label' => __('Sample taxonomy', 'pyc'),
-            'public' => false,
-            'show_ui' => true,
-            'show_in_menu' => true,
-            'show_admin_column' => true,
-            'hierarchical' => true,
-        )
-    );
-}
-add_action('init', 'register_custom_taxonomy');
-
 /* BLOCK(S)
 --------------------------------------------------------------- */
 
 // Register blocks
 function register_acf_blocks()
 {
-    $blocks = ["logos-grid"];
+    $blocks = ["logos-grid", "triptych"];
 
     foreach ($blocks as $block) {
         register_block_type(__DIR__ . '/blocks/' . $block);

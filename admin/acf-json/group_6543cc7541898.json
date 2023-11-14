@@ -84,7 +84,7 @@
             "name": "logos",
             "aria-label": "",
             "type": "gallery",
-            "instructions": "To be optimal, upload the logos in svg.",
+            "instructions": "To be optimal, upload the logos in svg. No need to edit to match the color, the color is rendered in the front automatically.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -143,5 +143,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699263051
+    "modified": 1699869832
 }

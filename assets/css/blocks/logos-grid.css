@@ -22,9 +22,34 @@
     }
 }
 
-.logos-grid-block .logos>img {
+.logos-grid-block .logos img {
     width: 100%;
     max-width: 165px;
     height: auto;
     display: block;
+    opacity: 0;
+    filter: brightness(5%);
+    transition: opacity ease 350ms;
+}
+
+@media screen and (min-width: 1200px) {
+    .logos-grid-block .logos img:nth-child(4n+1) {
+        transition-delay: 200ms;
+    }
+
+    .logos-grid-block .logos img:nth-child(4n+2) {
+        transition-delay: 400ms;
+    }
+
+    .logos-grid-block .logos img:nth-child(4n+3) {
+        transition-delay: 600ms;
+    }
+
+    .logos-grid-block .logos img:nth-child(4n) {
+        transition-delay: 800ms;
+    }
+}
+
+.logos-grid-block.js-viewed .logos img {
+    opacity: 1;
 }

@@ -5,6 +5,8 @@
     "category": "pyc-block",
     "icon": "grid-view",
     "keywords": [
+        "image",
+        "logo"
     ],
     "acf": {
         "mode": "edit",

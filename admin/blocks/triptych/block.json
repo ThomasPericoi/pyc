@@ -1,0 +1,12 @@
+{
+    "name": "acf/triptych",
+    "title": "Triptych",
+    "description": "A display of texts and images, in three parts.",
+    "category": "pyc-block",
+    "icon": "images-alt",
+    "keywords": [],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "triptych.php"
+    }
+}
