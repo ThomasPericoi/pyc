@@ -41,6 +41,7 @@ Text Domain: pyc
 /* #Blocks
 --------------------------------------------------------------- */
 
+@import "./assets/css/blocks/content-2-columns.css";
 @import "./assets/css/blocks/logos-grid.css";
 @import "./assets/css/blocks/triptych.css";
 

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Triptych Block Template.
+ * Content (2 columns) Template.
  *
  * @param   array $block The block settings and attributes.
  * @param   string $content The block inner HTML (empty).
@@ -14,10 +14,14 @@
 
 $title = get_field('title');
 $subtitle = get_field('subtitle');
+$content_title = get_field('content_title');
+$content = get_field('content');
+$image = get_field("image");
 
 $background = get_field('background');
+$order = get_field('order');
 
-$classes = array('triptych-block');
+$classes = array('content-2-columns-block', $order);
 $classes  = implode(' ', $classes);
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
@@ -29,33 +33,25 @@ $style  = implode('; ', $styles);
 
 <!-- Block - Logos grid -->
 <section class="<?php echo esc_attr($classes); ?>" style="<?php echo esc_attr($style); ?>">
-    <div class="container">
+    <div class="container container-sm">
         <?php if ($title) : ?>
             <h2><?php echo $title; ?></h2>
         <?php endif; ?>
         <?php if ($subtitle) : ?>
             <p class="subtitle"><?php echo $subtitle; ?></p>
         <?php endif; ?>
-        <?php
-        if (have_rows('elements')) : ?>
-            <div class="grid">
-                <?php while (have_rows('elements')) : the_row();
-                    $title = get_sub_field('title');
-                    $text = get_sub_field('text');
-                    $image = get_sub_field('image'); ?>
-                    <div class="element">
-                        <?php if ($title) : ?>
-                            <h3><?php echo $title; ?></h3>
-                        <?php endif; ?>
-                        <?php if ($text) : ?>
-                            <p><?php echo $text; ?></p>
-                        <?php endif; ?>
-                        <?php if ($image) : ?>
-                            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                        <?php endif; ?>
-                    </div>
-                <?php endwhile; ?>
+        <div class="col-wrapper">
+            <div class="content formatted">
+                <?php if ($content_title) : ?>
+                    <h3><?php echo $content_title; ?></h3>
+                <?php endif; ?>
+                <?php echo $content; ?>
             </div>
-        <?php endif; ?>
+            <div class="media">
+                <?php if ($image) : ?>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                <?php endif; ?>
+            </div>
+        </div>
     </div>
 </section>

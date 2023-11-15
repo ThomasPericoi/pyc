@@ -1,10 +1,10 @@
 {
-    "key": "group_655200c86ef73",
-    "title": "Block - Triptych options",
+    "key": "group_6554e4c31e92d",
+    "title": "Block - Content (2 columns) options",
     "fields": [
         {
-            "key": "field_655200c872381",
-            "label": "Triptych",
+            "key": "field_6554e4c3245fd",
+            "label": "Content (2 columns)",
             "name": "",
             "aria-label": "",
             "type": "message",
@@ -16,12 +16,12 @@
                 "class": "",
                 "id": ""
             },
-            "message": "A display of texts and images, in three parts.",
+            "message": "Two columns with two content, one media and one text.",
             "new_lines": "br",
             "esc_html": 0
         },
         {
-            "key": "field_655200c875e85",
+            "key": "field_6554e4c3281ce",
             "label": "Content",
             "name": "",
             "aria-label": "",
@@ -39,7 +39,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_655200c879b33",
+            "key": "field_6554e4c32bd20",
             "label": "Section's title",
             "name": "title",
             "aria-label": "",
@@ -59,7 +59,7 @@
             "append": ""
         },
         {
-            "key": "field_655200c87d673",
+            "key": "field_6554e4c32f967",
             "label": "Section's subtitle",
             "name": "subtitle",
             "aria-label": "",
@@ -79,12 +79,12 @@
             "new_lines": "br"
         },
         {
-            "key": "field_65525cf6c8b84",
-            "label": "Elements",
-            "name": "elements",
+            "key": "field_6554e95e1aeef",
+            "label": "Content's title (Column 1)",
+            "name": "content_title",
             "aria-label": "",
-            "type": "repeater",
-            "instructions": "Maximum 3 elements.",
+            "type": "text",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -92,86 +92,59 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "table",
-            "pagination": 0,
-            "min": 0,
-            "max": 3,
-            "collapsed": "",
-            "button_label": "Add Row",
-            "rows_per_page": 20,
-            "sub_fields": [
-                {
-                    "key": "field_65525d2bc8b85",
-                    "label": "Element's title",
-                    "name": "title",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_65525cf6c8b84"
-                },
-                {
-                    "key": "field_65525d3fc8b86",
-                    "label": "Element's text",
-                    "name": "text",
-                    "aria-label": "",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "rows": 5,
-                    "placeholder": "",
-                    "new_lines": "br",
-                    "parent_repeater": "field_65525cf6c8b84"
-                },
-                {
-                    "key": "field_65525d62c8b87",
-                    "label": "Element's image",
-                    "name": "image",
-                    "aria-label": "",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "preview_size": "medium",
-                    "parent_repeater": "field_65525cf6c8b84"
-                }
-            ]
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
-            "key": "field_655200c884d76",
+            "key": "field_6554e8e4057e7",
+            "label": "Content (Column 1)",
+            "name": "content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_6554e923057e8",
+            "label": "Image (Column 2)",
+            "name": "image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_6554e4c33700b",
             "label": "Style",
             "name": "",
             "aria-label": "",
@@ -189,7 +162,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_6554e46e4fef1",
+            "key": "field_6554e4c33aa8a",
             "label": "Background",
             "name": "background",
             "aria-label": "",
@@ -213,6 +186,31 @@
             "ui": 0,
             "ajax": 0,
             "placeholder": ""
+        },
+        {
+            "key": "field_6554ec52002c1",
+            "label": "Order",
+            "name": "order",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "normal": "Content + Media",
+                "reverse": "Media + Content"
+            },
+            "default_value": "normal",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
         }
     ],
     "location": [
@@ -220,7 +218,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/triptych"
+                "value": "acf\/content-2-columns"
             }
         ]
     ],
@@ -233,5 +231,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1700062358
+    "modified": 1700064491
 }

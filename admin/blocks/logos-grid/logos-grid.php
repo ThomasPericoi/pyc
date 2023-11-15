@@ -12,15 +12,18 @@
  * @param   array $context The context provided to the block by the post or it's parent block.
  */
 
-$classes = 'logos-grid-block';
+$title = get_field('title');
+$subtitle = get_field('subtitle');
+
+$background = get_field('background');
+
+$classes = array('logos-grid-block');
+$classes  = implode(' ', $classes);
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }
 
-$title = get_field('title');
-$subtitle = get_field('subtitle');
-
-$styles = array("");
+$styles = array("background: var(--" . $background . ")");
 $style  = implode('; ', $styles);
 ?>
 

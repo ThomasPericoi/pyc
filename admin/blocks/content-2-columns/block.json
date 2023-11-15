@@ -1,0 +1,15 @@
+{
+    "name": "acf/content-2-columns",
+    "title": "Content (2 columns)",
+    "description": "A grid of logos, to display clients for example.",
+    "category": "pyc-block",
+    "icon": "grid-view",
+    "keywords": [
+        "image",
+        "text"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "content-2-columns.php"
+    }
+}
