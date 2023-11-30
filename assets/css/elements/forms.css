@@ -1,0 +1,14 @@
+/* #Forms
+--------------------------------------------------------------- */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: var(--body);
+    border-radius: var(--border-radius);
+    border: 2px solid var(--secondary);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}

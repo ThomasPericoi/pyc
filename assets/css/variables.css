@@ -17,7 +17,7 @@
 
   /* Spacings */
   --spacing-section-inner: 2rem;
-  --spacing-section-outer: 3rem;
+  --spacing-section-outer: 4rem;
 
   /* Radius */
   --border-radius: 4px;
@@ -27,6 +27,6 @@
   :root {
     /* Spacings */
     --spacing-section-inner: 2.5rem;
-    --spacing-section-outer: 4rem;
+    --spacing-section-outer: 5rem;
   }
 }

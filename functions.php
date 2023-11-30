@@ -125,3 +125,5 @@ if (class_exists('ACF')) {
         acf_write_json_field_group($field_group);
     }
 }
+
+add_filter('acf/format_value/type=text', 'do_shortcode');

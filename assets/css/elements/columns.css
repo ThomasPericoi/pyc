@@ -1,0 +1,26 @@
+/* #Columns
+--------------------------------------------------------------- */
+.col-wrapper {
+    margin: var(--spacing-section-inner) auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-section-inner);
+}
+
+@media screen and (min-width: 992px) {
+    .col-wrapper {
+        flex-direction: row;
+    }
+}
+
+.col-wrapper>div {
+    flex: 1 1 0;
+}
+
+@media screen and (min-width: 992px) {
+    .col-wrapper>div {
+        max-width: 50%;
+    }
+}

@@ -186,6 +186,11 @@
                 "value": "front_page"
             },
             {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "templates\/contact-page.php"
+            },
+            {
                 "param": "post_type",
                 "operator": "==",
                 "value": "page"
@@ -208,5 +213,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699955005
+    "modified": 1701359238
 }
