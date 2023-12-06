@@ -51,7 +51,9 @@ $style  = implode('; ', $styles);
                             <p><?php echo $text; ?></p>
                         <?php endif; ?>
                         <?php if ($image) : ?>
-                            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                            <div class="media">
+                                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                            </div>
                         <?php endif; ?>
                     </div>
                 <?php endwhile; ?>

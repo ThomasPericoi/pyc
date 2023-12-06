@@ -1,27 +1,31 @@
 /* #Triptych
 --------------------------------------------------------------- */
 .triptych-block {
-    padding: var(--spacing-section-outer) 0;
-    position: relative;
-    text-align: center;
+  padding: var(--spacing-section-outer) 0;
+  position: relative;
+  text-align: center;
 }
 
 .triptych-block .grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: var(--spacing-section-inner);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: var(--spacing-section-inner);
 }
 
 @media screen and (min-width: 1200px) {
-    .triptych-block .grid {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 5rem;
-    }
+  .triptych-block .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+  }
 }
 
 .triptych-block .grid .element {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.triptych-block .media > * {
+  width: 100%;
 }
