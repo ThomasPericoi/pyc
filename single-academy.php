@@ -3,7 +3,7 @@
 <!-- Hero -->
 <?php
 $title = get_the_title();
-$description = get_the_excerpt();
+$description = has_excerpt() ? get_the_excerpt() : false;
 $video = get_field("academy_video");
 ?>
 <section id="single-academy-hero">

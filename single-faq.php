@@ -3,7 +3,7 @@
 <!-- Hero -->
 <?php
 $title = get_the_title();
-$description = get_the_excerpt();
+$description = has_excerpt() ? get_the_excerpt() : false;
 ?>
 <section id="single-faq-hero">
     <div class="container container-sm">
