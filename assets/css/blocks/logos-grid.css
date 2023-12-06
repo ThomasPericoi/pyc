@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
     .logos-grid-block .logos {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 3rem;
