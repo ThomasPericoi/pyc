@@ -35,7 +35,8 @@
   transition: color ease 350ms;
 }
 
-.faq-block .faq .element a:hover {
+.faq-block .faq .element a:hover,
+.faq-block .faq .element a:focus {
   color: var(--primary);
 }
 
@@ -50,6 +51,7 @@
   transition: transform ease 350ms;
 }
 
-.faq-block .faq .element a:hover:before {
+.faq-block .faq .element a:hover:before,
+faq-block .faq .element a:focus:before {
   transform: scale(1.1);
 }

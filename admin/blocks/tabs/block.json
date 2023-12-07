@@ -1,0 +1,12 @@
+{
+  "name": "acf/tabs",
+  "title": "Tabs",
+  "description": "A basic tabs component.",
+  "category": "pyc-block",
+  "icon": "ellipsis",
+  "keywords": ["content", "image", "image"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "tabs.php"
+  }
+}

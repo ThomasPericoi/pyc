@@ -194,7 +194,7 @@
         },
         {
             "key": "field_6569ffe31c33d",
-            "label": "Video (Column 1)",
+            "label": "Video (Column 2)",
             "name": "video",
             "aria-label": "",
             "type": "file",
@@ -336,5 +336,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1701948269
+    "modified": 1701968481
 }

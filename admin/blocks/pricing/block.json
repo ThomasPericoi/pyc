@@ -1,0 +1,12 @@
+{
+  "name": "acf/pricing",
+  "title": "Pricing",
+  "description": "A component to display pricing tables.",
+  "category": "pyc-block",
+  "icon": "money-alt",
+  "keywords": ["price"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "pricing.php"
+  }
+}

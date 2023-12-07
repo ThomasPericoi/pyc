@@ -1,0 +1,12 @@
+/* #Pricing
+--------------------------------------------------------------- */
+.pricing-block {
+  padding: var(--spacing-section-outer) 0;
+  position: relative;
+  text-align: center;
+}
+
+.pricing-block h2,
+.pricing-block .subtitle {
+  text-align: center;
+}
