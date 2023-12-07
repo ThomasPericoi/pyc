@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Triptych Block Template.
+ * Timeline Block Template.
  *
  * @param   array $block The block settings and attributes.
  * @param   string $content The block inner HTML (empty).
@@ -17,7 +17,7 @@ $subtitle = get_field('subtitle');
 
 $background = get_field('background');
 
-$classes = array('triptych-block');
+$classes = array('timeline-block');
 $classes  = implode(' ', $classes);
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
@@ -27,7 +27,7 @@ $styles = array("background: var(--" . $background . ")");
 $style  = implode('; ', $styles);
 ?>
 
-<!-- Block - Triptyque -->
+<!-- Block - Timeline -->
 <section class="<?php echo esc_attr($classes); ?>" style="<?php echo esc_attr($style); ?>">
     <div class="container">
         <?php if ($title) : ?>
@@ -41,18 +41,18 @@ $style  = implode('; ', $styles);
                 <?php while (have_rows('elements')) : the_row();
                     $title = get_sub_field('title');
                     $text = get_sub_field('text');
-                    $image = get_sub_field('image'); ?>
+                    $icon = get_sub_field('image'); ?>
                     <div class="element">
+                        <?php if ($icon) : ?>
+                            <div class="icon">
+                                <img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>" />
+                            </div>
+                        <?php endif; ?>
                         <?php if ($title) : ?>
                             <h3><?php echo $title; ?></h3>
                         <?php endif; ?>
                         <?php if ($text) : ?>
                             <p><?php echo $text; ?></p>
-                        <?php endif; ?>
-                        <?php if ($image) : ?>
-                            <div class="media">
-                                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                            </div>
                         <?php endif; ?>
                     </div>
                 <?php endwhile; ?>

@@ -1,0 +1,12 @@
+{
+  "name": "acf/timeline",
+  "title": "Timeline",
+  "description": "Up to 3 elements, displayed in a timeline way.",
+  "category": "pyc-block",
+  "icon": "arrow-right-alt",
+  "keywords": [],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "timeline.php"
+  }
+}
