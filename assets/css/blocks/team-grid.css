@@ -1,12 +1,12 @@
 /* #Team block
 --------------------------------------------------------------- */
-.team-block {
+.team-grid-block {
   padding: var(--spacing-section-outer) 0;
   position: relative;
   text-align: center;
 }
 
-.team-block .members {
+.team-grid-block .members {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
@@ -15,20 +15,20 @@
 }
 
 @media screen and (min-width: 992px) {
-  .team-block .members {
+  .team-grid-block .members {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 3rem;
   }
 }
 
-.team-block .member {
+.team-grid-block .member {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.team-block .portrait {
+.team-grid-block .portrait {
   width: 100%;
   height: auto;
   aspect-ratio: 0.75;

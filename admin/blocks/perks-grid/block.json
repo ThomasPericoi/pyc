@@ -1,0 +1,12 @@
+{
+  "name": "acf/perks-grid",
+  "title": "Perks grid",
+  "description": "A grid of cards, with icons, to display perks for example.",
+  "category": "pyc-block",
+  "icon": "saved",
+  "keywords": ["icon", "perk"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "perks-grid.php"
+  }
+}

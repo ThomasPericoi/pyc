@@ -3,7 +3,7 @@
     "title": "Content (2 columns)",
     "description": "A grid of logos, to display clients for example.",
     "category": "pyc-block",
-    "icon": "grid-view",
+    "icon": "align-pull-left",
     "keywords": [
         "image",
         "text"

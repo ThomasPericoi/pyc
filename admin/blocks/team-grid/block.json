@@ -1,12 +1,12 @@
 {
-  "name": "acf/team",
-  "title": "Team",
+  "name": "acf/team-grid",
+  "title": "Team grid",
   "description": "A grid of pictures with labels, to display portraits for example.",
   "category": "pyc-block",
   "icon": "admin-users",
   "keywords": ["image", "portrait"],
   "acf": {
     "mode": "edit",
-    "renderTemplate": "team.php"
+    "renderTemplate": "team-grid.php"
   }
 }

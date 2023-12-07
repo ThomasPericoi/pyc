@@ -29,7 +29,7 @@
 /* Extra-Small */
 @media screen and (min-width: 992px) {
   .container-xs {
-    max-width: 750px;
+    max-width: 800px;
   }
 }
 

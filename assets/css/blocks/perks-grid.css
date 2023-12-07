@@ -1,0 +1,51 @@
+/* #Perks
+--------------------------------------------------------------- */
+.perks-grid-block {
+  padding: var(--spacing-section-outer) 0;
+  position: relative;
+  text-align: center;
+}
+
+.perks-grid-block h2,
+.perks-grid-block .subtitle {
+  text-align: center;
+}
+
+.perks-grid-block .grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: var(--spacing-section-inner);
+}
+
+@media screen and (min-width: 768px) {
+  .perks-grid-block .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.perks-grid-block .grid .element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.perks-grid-block .grid .element .icon {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  border-radius: var(--border-radius);
+}
+
+.perks-grid-block .grid .element img {
+  width: 100%;
+  height: auto;
+  max-width: 25px;
+}
+
+.perks-grid-block .btn {
+  margin-top: var(--spacing-section-inner);
+}

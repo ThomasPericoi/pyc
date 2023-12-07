@@ -1,10 +1,10 @@
 {
     "key": "group_657093c44d767",
-    "title": "Block - Team options",
+    "title": "Block - Team grid options",
     "fields": [
         {
             "key": "field_657093c4564b0",
-            "label": "Team",
+            "label": "Team grid",
             "name": "",
             "aria-label": "",
             "type": "message",
@@ -220,7 +220,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/team"
+                "value": "acf\/team-grid"
             }
         ]
     ],
@@ -233,5 +233,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1701878624
+    "modified": 1701947406
 }

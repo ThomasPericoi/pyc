@@ -1,10 +1,10 @@
 {
-    "key": "group_6554e4c31e92d",
-    "title": "Block - Content (2 columns) options",
+    "key": "group_6571a6877f907",
+    "title": "Block - Perks grid options",
     "fields": [
         {
-            "key": "field_6554e4c3245fd",
-            "label": "Content (2 columns)",
+            "key": "field_6571a687873c9",
+            "label": "Perks grid",
             "name": "",
             "aria-label": "",
             "type": "message",
@@ -16,12 +16,12 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Two columns with two content, one media and one text.",
+            "message": "A grid of cards, with icons, to display perks for example.",
             "new_lines": "br",
             "esc_html": 0
         },
         {
-            "key": "field_6554e4c3281ce",
+            "key": "field_6571a687873de",
             "label": "Content",
             "name": "",
             "aria-label": "",
@@ -39,7 +39,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_6554e4c32bd20",
+            "key": "field_6571a687873e7",
             "label": "Section's title",
             "name": "title",
             "aria-label": "",
@@ -59,7 +59,7 @@
             "append": ""
         },
         {
-            "key": "field_6554e4c32f967",
+            "key": "field_6571a687873ed",
             "label": "Section's subtitle",
             "name": "subtitle",
             "aria-label": "",
@@ -79,11 +79,11 @@
             "new_lines": "br"
         },
         {
-            "key": "field_6554e95e1aeef",
-            "label": "Content's title (Column 1)",
-            "name": "content_title",
+            "key": "field_6571a687873f6",
+            "label": "Elements",
+            "name": "elements",
             "aria-label": "",
-            "type": "text",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -92,35 +92,87 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6571a6879234e",
+                    "label": "Element's icon",
+                    "name": "icon",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "parent_repeater": "field_6571a687873f6"
+                },
+                {
+                    "key": "field_6571a6879233a",
+                    "label": "Element's title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6571a687873f6"
+                },
+                {
+                    "key": "field_6571a68792345",
+                    "label": "Element's text",
+                    "name": "text",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": 5,
+                    "placeholder": "",
+                    "new_lines": "br",
+                    "parent_repeater": "field_6571a687873f6"
+                }
+            ]
         },
         {
-            "key": "field_6554e8e4057e7",
-            "label": "Content (Column 1)",
-            "name": "content",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
-        },
-        {
-            "key": "field_6569f03a1958c",
-            "label": "Button (Column 1)",
+            "key": "field_6571aaf02f945",
+            "label": "Button",
             "name": "button",
             "aria-label": "",
             "type": "link",
@@ -135,93 +187,7 @@
             "return_format": "array"
         },
         {
-            "key": "field_6569ff441c33c",
-            "label": "Media type (Column 1)",
-            "name": "media",
-            "aria-label": "",
-            "type": "radio",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "image": "Image",
-                "video": "Video"
-            },
-            "default_value": "",
-            "return_format": "value",
-            "allow_null": 0,
-            "other_choice": 0,
-            "layout": "vertical",
-            "save_other_choice": 0
-        },
-        {
-            "key": "field_6554e923057e8",
-            "label": "Image (Column 2)",
-            "name": "image",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_6569ff441c33c",
-                        "operator": "==",
-                        "value": "image"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "medium"
-        },
-        {
-            "key": "field_6569ffe31c33d",
-            "label": "Video (Column 1)",
-            "name": "video",
-            "aria-label": "",
-            "type": "file",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_6569ff441c33c",
-                        "operator": "==",
-                        "value": "video"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "url",
-            "library": "all",
-            "min_size": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_6554e4c33700b",
+            "key": "field_6571a687873fc",
             "label": "Style",
             "name": "",
             "aria-label": "",
@@ -239,7 +205,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_6554e4c33aa8a",
+            "key": "field_6571a68787403",
             "label": "Background",
             "name": "background",
             "aria-label": "",
@@ -265,32 +231,7 @@
             "placeholder": ""
         },
         {
-            "key": "field_6554ec52002c1",
-            "label": "Order",
-            "name": "order",
-            "aria-label": "",
-            "type": "radio",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "normal": "Content + Media",
-                "reverse": "Media + Content"
-            },
-            "default_value": "normal",
-            "return_format": "value",
-            "allow_null": 0,
-            "other_choice": 0,
-            "layout": "vertical",
-            "save_other_choice": 0
-        },
-        {
-            "key": "field_6569f0681958d",
+            "key": "field_6571ab565538e",
             "label": "Button",
             "name": "button_style",
             "aria-label": "",
@@ -323,7 +264,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/content-2-columns"
+                "value": "acf\/perks-grid"
             }
         ]
     ],
@@ -336,5 +277,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1701948269
+    "modified": 1701948292
 }
