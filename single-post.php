@@ -4,8 +4,9 @@
 <?php
 $title = get_the_title();
 $description = has_excerpt() ? get_the_excerpt() : false;
+$hero_style = get_field("post_hero_style");
 ?>
-<section id="single-post-hero">
+<section id="single-post-hero" class="hero-<?php echo $hero_style; ?>" <?php if (has_post_thumbnail() && ($hero_style === "full")) : ?>style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');"<?php endif; ?>>
     <div class="container container-sm">
         <?php
         $cat = get_the_category();
@@ -19,7 +20,7 @@ $description = has_excerpt() ? get_the_excerpt() : false;
         <?php if ($description) : ?>
             <p class="description"><?php echo $description; ?></p>
         <?php endif; ?>
-        <?php if (has_post_thumbnail()) : ?>
+        <?php if (has_post_thumbnail() && ($hero_style === "normal")) : ?>
             <?php the_post_thumbnail("full", array('class' => 'cover')); ?>
         <?php endif; ?>
     </div>
