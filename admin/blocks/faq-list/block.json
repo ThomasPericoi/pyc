@@ -1,0 +1,12 @@
+{
+  "name": "acf/faq-list",
+  "title": "FAQ list",
+  "description": "A list of FAQ elements that you can handpick.",
+  "category": "pyc-block",
+  "icon": "insert",
+  "keywords": ["content", "faq"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "faq-list.php"
+  }
+}

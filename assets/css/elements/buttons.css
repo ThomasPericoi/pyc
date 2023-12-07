@@ -30,7 +30,7 @@
     border: 0;
     border-radius: var(--border-radius);
     cursor: pointer;
-    transition: color ease 250ms, background-color ease 250ms, border ease 250ms;
+    transition: color ease 350ms, background-color ease 350ms, border ease 350ms;
 }
 
 /* Full */

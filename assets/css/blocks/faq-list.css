@@ -1,0 +1,55 @@
+/* #FAQ
+--------------------------------------------------------------- */
+.faq-block {
+  padding: var(--spacing-section-outer) 0;
+  position: relative;
+}
+
+.faq-block h2,
+.faq-block .subtitle {
+  text-align: center;
+}
+
+.faq-block .faq {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .faq-block .faq {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+  }
+}
+
+.faq-block .faq .element {
+  width: 100%;
+}
+
+.faq-block .faq .element a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  transition: color ease 350ms;
+}
+
+.faq-block .faq .element a:hover {
+  color: var(--primary);
+}
+
+.faq-block .faq .element a:before {
+  content: "";
+  min-width: 25px;
+  height: 25px;
+  display: block;
+  background-size: 25px 25px;
+  background-image: url(../../icons/plus-circled.svg);
+  transform: scale(1);
+  transition: transform ease 350ms;
+}
+
+.faq-block .faq .element a:hover:before {
+  transform: scale(1.1);
+}

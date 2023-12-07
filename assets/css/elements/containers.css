@@ -26,6 +26,13 @@
   }
 }
 
+/* Extra-Small */
+@media screen and (min-width: 992px) {
+  .container-xs {
+    max-width: 750px;
+  }
+}
+
 /* Small */
 @media screen and (min-width: 992px) {
   .container-sm {
