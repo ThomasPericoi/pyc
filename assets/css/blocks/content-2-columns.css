@@ -25,3 +25,9 @@
 .content-2-columns-block .media>* {
     width: 100%;
 }
+
+.content-2-columns-block form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+}
