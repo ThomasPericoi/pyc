@@ -36,5 +36,60 @@ $style  = implode('; ', $styles);
         <?php if ($subtitle) : ?>
             <p class="subtitle"><?php echo $subtitle; ?></p>
         <?php endif; ?>
+        <?php if (have_rows('tables')) : ?>
+            <button id="price-toggle" class="btn btn-primary" data-toggle="month" onclick="this.blur();">
+                <span id="price-month-button"><?php echo __("Switch to yearly pricing") ?></span>
+                <span id="price-year-button"><?php echo __("Switch to monthly pricing") ?></span>
+            </button>
+            <div class="grid tables">
+                <?php while (have_rows('tables')) : the_row();
+                    $title = get_sub_field('title');
+                    $subtitle = get_sub_field('subtitle');
+                    $image = get_sub_field('image');
+                    $price_month = get_sub_field('price_month');
+                    $price_year = get_sub_field('price_year');
+                    $button = get_sub_field('button');
+                ?>
+                    <div class="element table">
+                        <div class="header">
+                            <?php if ($title) : ?>
+                                <p class="title"><?php echo $title; ?></p>
+                            <?php endif; ?>
+                            <?php if ($subtitle) : ?>
+                                <p><?php echo $subtitle; ?></p>
+                            <?php endif; ?>
+                        </div>
+                        <?php if ($image) : ?>
+                            <div class="icon">
+                                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                            </div>
+                        <?php endif; ?>
+                        <?php if ($price_month) : ?>
+                            <div id="price-month" class="price">
+                                <p class="price_price"><?php echo $price_month; ?></p>
+                                <p class="price_label"><?php echo __("per month", "pyc"); ?></p>
+                            </div>
+                        <?php endif; ?>
+                        <?php if ($price_year) : ?>
+                            <div id="price-year" class="price">
+                                <p class="price_price"><?php echo $price_year; ?></p>
+                                <p class="price_label"><?php echo __("per year", "pyc"); ?></p>
+                            </div>
+                        <?php endif; ?>
+                        <?php if (have_rows('features')) : ?>
+                            <ul class="features">
+                                <?php while (have_rows('features')) : the_row();
+                                    $feature = get_sub_field('feature'); ?>
+                                    <li><?php echo $feature; ?></li>
+                                <?php endwhile; ?>
+                            </ul>
+                        <?php endif; ?>
+                        <?php if ($button) : ?>
+                            <a href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>" class="btn btn-primary"><?php echo $button['title']; ?></a>
+                        <?php endif; ?>
+                    </div>
+                <?php endwhile; ?>
+            </div>
+        <?php endif; ?>
     </div>
 </section>

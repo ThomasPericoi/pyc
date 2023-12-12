@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .setAttribute(
           "aria-hidden",
           !(document.querySelector(".super-menu").getAttribute("aria-hidden") ==
-          "true"
+            "true"
             ? true
             : false)
         );
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .setAttribute(
           "aria-hidden",
           !(document.querySelector("footer").getAttribute("aria-hidden") ==
-          "true"
+            "true"
             ? true
             : false)
         );
@@ -195,6 +195,19 @@ document.addEventListener("DOMContentLoaded", function () {
         item.click();
       }
     });
+  });
+
+  // Block - Pricing
+  function togglePrice() {
+    if (document.querySelector("#price-toggle").getAttribute('data-toggle') === "month") {
+      document.querySelector("#price-toggle").setAttribute('data-toggle', 'year');
+    } else {
+      document.querySelector("#price-toggle").setAttribute('data-toggle', 'month');
+    }
+  }
+
+  document.querySelector("#price-toggle").addEventListener("click", function () {
+    togglePrice();
   });
 
   // Block - Tabs
