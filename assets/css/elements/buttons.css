@@ -79,7 +79,7 @@
 
 /* Pagination */
 .navigation.pagination {
-    margin-top: var(--spacing-section-inner);
+    margin-bottom: var(--spacing-section-inner);
     font-weight: 700;
     font-family: var(--bold);
 }

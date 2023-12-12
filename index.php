@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <?php
+$slug = get_page_by_path('blog');
 if (is_category()) :
     $title = single_cat_title('', false);
     $description = category_description();
@@ -8,8 +9,8 @@ elseif (is_tag()) :
     $title = single_tag_title('', false);
     $description = tag_description();
 else :
-    $title = get_field('page_title') ?: get_the_title();
-    $description = get_field('page_description') ?: get_the_excerpt();
+    $title = get_field('page_title', $slug->ID);
+    $description = get_field('page_description', $slug->ID);
 endif;
 ?>
 
@@ -20,11 +21,11 @@ endif;
         'id' => "index-hero",
         'title' => $title,
         'description' => $description,
-        'button_1' => get_field('page_button_1'),
-        'button_2' => get_field('page_button_2'),
-        'cover' => get_field("page_cover"),
-        'cover_image' => get_field("page_image"),
-        'cover_video' => get_field("page_video"),
+        'button_1' => get_field('page_button_1', $slug->ID),
+        'button_2' => get_field('page_button_2', $slug->ID),
+        'cover' => get_field("page_cover", $slug->ID),
+        'cover_image' => get_field("page_image", $slug->ID),
+        'cover_video' => get_field("page_video", $slug->ID),
     )
 ); ?>
 
