@@ -60,7 +60,7 @@ $style  = implode('; ', $styles);
                         <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                     <?php elseif (($media == "video") && $video) : ?>
                         <div class="video-wrapper cover">
-                            <video src="<?php echo $video; ?>" loop playsinline tabindex="0">
+                            <video src="<?php echo $video; ?>#t=0.001" loop playsinline tabindex="0">
                             </video>
                             <div class="play"></div>
                         </div>
