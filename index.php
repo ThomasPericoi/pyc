@@ -26,6 +26,7 @@ endif;
         'cover' => get_field("page_cover", $slug->ID),
         'cover_image' => get_field("page_image", $slug->ID),
         'cover_video' => get_field("page_video", $slug->ID),
+        'cover_video_poster' => get_field("page_video_poster", $slug->ID),
     )
 ); ?>
 

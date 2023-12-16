@@ -20,6 +20,7 @@ $button = get_field('button');
 $media = get_field("media");
 $image = get_field("image");
 $video = get_field("video");
+$video_poster = get_field("video_poster");
 
 $background = get_field('background');
 $order = get_field('order');
@@ -60,7 +61,7 @@ $style  = implode('; ', $styles);
                         <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                     <?php elseif (($media == "video") && $video) : ?>
                         <div class="video-wrapper cover">
-                            <video src="<?php echo $video; ?>#t=0.001" loop playsinline tabindex="0">
+                            <video src="<?php echo $video; ?>" loop playsinline tabindex="0" <?php if ($video_poster) : ?>poster="<?php echo $video_poster['url']; ?>" <?php endif; ?>>
                             </video>
                             <div class="play"></div>
                         </div>

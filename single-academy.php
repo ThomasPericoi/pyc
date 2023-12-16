@@ -5,6 +5,7 @@
 $title = get_the_title();
 $description = has_excerpt() ? get_the_excerpt() : false;
 $video = get_field("academy_video");
+$video_poster = get_field("academy_video_poster");
 ?>
 <section id="single-academy-hero">
     <div class="container container-sm">
@@ -14,7 +15,7 @@ $video = get_field("academy_video");
         <?php endif; ?>
         <?php if ($video) : ?>
             <div class="video-wrapper cover">
-                <video src="<?php echo $video["url"]; ?>" tabindex="0">
+                <video src="<?php echo $video["url"]; ?>" tabindex="0" <?php if ($video_poster) : ?>poster="<?php echo $video_poster['url']; ?>" <?php endif; ?>>
                 </video>
                 <div class="play"></div>
             </div>

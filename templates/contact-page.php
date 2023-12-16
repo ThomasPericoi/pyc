@@ -13,6 +13,7 @@ get_header(); ?>
         'cover' => get_field("contact_cover"),
         'cover_image' => get_field("contact_image"),
         'cover_video' => get_field("contact_video"),
+        'cover_video_poster' => get_field("contact_video_poster"),
     )
 ); ?>
 

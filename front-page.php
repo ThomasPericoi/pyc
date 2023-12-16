@@ -9,6 +9,7 @@
     'cover' => get_field("home_cover"),
     'cover_image' => get_field("home_image"),
     'cover_video' => get_field("home_video"),
+    'cover_video_poster' => get_field("home_video_poster"),
 )); ?>
 
 <?php the_content(); ?>

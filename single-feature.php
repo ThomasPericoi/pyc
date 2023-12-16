@@ -12,6 +12,7 @@
         'cover' => get_field("page_cover"),
         'cover_image' => get_field("page_image"),
         'cover_video' => get_field("page_video"),
+        'cover_video_poster' => get_field("page_video_poster"),
     )
 ); ?>
 
