@@ -19,7 +19,21 @@
 
 @media screen and (min-width: 768px) {
   .perks-grid-block .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .perks-grid-block .grid.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .perks-grid-block .grid.grid-3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .perks-grid-block .grid.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

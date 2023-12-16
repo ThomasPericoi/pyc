@@ -231,6 +231,33 @@
             "placeholder": ""
         },
         {
+            "key": "field_657dbdd242890",
+            "label": "Amount of columns",
+            "name": "columns",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "1",
+                "2": "2",
+                "3": "3",
+                "4": "4"
+            },
+            "default_value": 3,
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
             "key": "field_6571ab565538e",
             "label": "Button",
             "name": "button_style",
@@ -277,5 +304,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702388692
+    "modified": 1702739473
 }

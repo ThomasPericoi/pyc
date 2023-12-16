@@ -17,6 +17,7 @@ $subtitle = get_field('subtitle');
 $button = get_field('button');
 
 $background = get_field('background');
+$columns = get_field('columns');
 $button_style = get_field('button_style');
 
 $classes = array('perks-grid-block');
@@ -39,7 +40,7 @@ $style  = implode('; ', $styles);
             <p class="subtitle"><?php echo $subtitle; ?></p>
         <?php endif; ?>
         <?php if (have_rows('elements')) : ?>
-            <div class="grid perks">
+            <div class="grid grid-<?php echo $columns; ?> perks">
                 <?php while (have_rows('elements')) : the_row();
                     $icon = get_sub_field('icon');
                     $title = get_sub_field('title');
