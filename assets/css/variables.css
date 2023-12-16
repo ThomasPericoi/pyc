@@ -12,8 +12,8 @@
   --secondary: var(--persian-indigo);
 
   /* Fonts */
-  --bold: "Titillium Web", sans-serif;
-  --body: "Titillium Web", sans-serif;
+  --bold: 'Baloo 2', sans-serif;
+  --body: var(--bold);
 
   /* Spacings */
   --spacing-section-inner: 2rem;

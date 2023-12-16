@@ -46,20 +46,20 @@ document.addEventListener("DOMContentLoaded", function () {
   function enableDyslexicMode() {
     document
       .querySelector(":root")
-      .style.setProperty("--body", "OpenDyslexic, sans-serif");
+      .style.setProperty("--body", "'OpenDyslexic', sans-serif");
     document
       .querySelector(":root")
-      .style.setProperty("--bold", "OpenDyslexic, sans-serif");
+      .style.setProperty("--bold", "'OpenDyslexic', sans-serif");
     sessionStorage.setItem("dyslexicMode", true);
     console.log("OpenDyslexic is enabled");
   }
   function disableDyslexicMode() {
     document
       .querySelector(":root")
-      .style.setProperty("--body", "Titillium Web, sans-serif");
+      .style.setProperty("--body", "'Baloo 2', sans-serif");
     document
       .querySelector(":root")
-      .style.setProperty("--bold", "Titillium Web, sans-serif");
+      .style.setProperty("--bold", "'Baloo 2', sans-serif");
     sessionStorage.setItem("dyslexicMode", false);
     console.log("OpenDyslexic is disabled");
   }
