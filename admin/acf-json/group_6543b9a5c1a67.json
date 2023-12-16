@@ -151,7 +151,9 @@
                         "facebook": "Facebook",
                         "instagram": "Instagram",
                         "linkedin": "LinkedIn",
-                        "twitter": "Twitter"
+                        "tiktok": "TikTok",
+                        "twitter": "Twitter",
+                        "youtube": "YouTube"
                     },
                     "default_value": false,
                     "return_format": "value",
@@ -408,5 +410,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702388706
+    "modified": 1702739250
 }
