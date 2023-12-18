@@ -4,7 +4,14 @@
     width: 100%;
     padding: var(--spacing-section-inner) 0;
     position: relative;
+    text-align: center;
     background-color: var(--secondary);
+}
+
+@media screen and (min-width: 768px) {
+    #footer {
+        text-align: unset;
+    }
 }
 
 /* Main footer */

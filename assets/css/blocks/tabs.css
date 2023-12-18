@@ -58,6 +58,4 @@
 
 .tabs-block .media > * {
   width: 100%;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--secondary);
 }

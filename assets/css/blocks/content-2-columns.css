@@ -10,9 +10,14 @@
     text-align: center;
 }
 
+.content-2-columns-block.reverse .col-wrapper {
+    text-align: center;
+}
+
 @media screen and (min-width: 768px) {
     .content-2-columns-block.reverse .col-wrapper {
         flex-direction: row-reverse;
+        text-align: unset;
     }
 }
 
