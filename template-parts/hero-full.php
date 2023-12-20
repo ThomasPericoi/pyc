@@ -37,7 +37,7 @@
                 <img src="<?php echo esc_url($args['cover_image']['url']); ?>" alt="<?php echo esc_attr($args['cover_image']['alt']); ?>" class="cover" />
             <?php elseif (($args['cover'] == "video") && $args['cover_video']) : ?>
                 <div class="video-wrapper cover">
-                    <video src="<?php echo $args['cover_video']["url"]; ?>" loop playsinline tabindex="0" <?php if ($args['cover_video_poster']) : ?>poster="<?php echo $args['cover_video_poster']['url']; ?>" <?php endif; ?>>
+                    <video src="<?php echo $args['cover_video']["url"]; ?>" playsinline tabindex="0" <?php if ($args['cover_video_poster']) : ?>poster="<?php echo $args['cover_video_poster']['url']; ?>" <?php endif; ?>>
                     </video>
                     <div class="play"></div>
                 </div>
