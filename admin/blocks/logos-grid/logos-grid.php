@@ -16,6 +16,7 @@ $title = get_field('title');
 $subtitle = get_field('subtitle');
 
 $background = get_field('background');
+$columns = get_field('columns');
 
 $classes = array('logos-grid-block');
 $classes  = implode(' ', $classes);
@@ -39,7 +40,7 @@ $style  = implode('; ', $styles);
         <?php
         $logos = get_field('logos');
         if ($logos) : ?>
-            <div class="logos">
+            <div class="grid grid-<?php echo $columns; ?> logos">
                 <?php foreach ($logos as $logo_id) : ?>
                     <?php echo wp_get_attachment_image($logo_id, "full"); ?>
                 <?php endforeach; ?>
