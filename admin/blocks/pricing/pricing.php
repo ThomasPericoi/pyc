@@ -37,7 +37,7 @@ $style  = implode('; ', $styles);
             <p class="subtitle"><?php echo $subtitle; ?></p>
         <?php endif; ?>
         <?php if (have_rows('tables')) : ?>
-            <button id="price-toggle" class="btn btn-primary" data-toggle="month" onclick="this.blur();">
+            <button id="price-toggle" class="btn btn-primary" data-toggle="year" onclick="this.blur();">
                 <span id="price-month-button"><?php echo __("Switch to yearly pricing") ?></span>
                 <span id="price-year-button"><?php echo __("Switch to monthly pricing") ?></span>
             </button>

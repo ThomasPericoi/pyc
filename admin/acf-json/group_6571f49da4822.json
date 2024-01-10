@@ -126,7 +126,7 @@
                     "label": "Subtitle",
                     "name": "subtitle",
                     "aria-label": "",
-                    "type": "text",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 1,
                     "conditional_logic": 0,
@@ -137,9 +137,9 @@
                     },
                     "default_value": "",
                     "maxlength": "",
+                    "rows": 2,
                     "placeholder": "",
-                    "prepend": "",
-                    "append": "",
+                    "new_lines": "br",
                     "parent_repeater": "field_65787719d122c"
                 },
                 {
@@ -231,7 +231,6 @@
                     "collapsed": "",
                     "button_label": "Add Row",
                     "rows_per_page": 20,
-                    "parent_repeater": "field_65787719d122c",
                     "sub_fields": [
                         {
                             "key": "field_65787799d122f",
@@ -254,7 +253,8 @@
                             "append": "",
                             "parent_repeater": "field_65787775d122e"
                         }
-                    ]
+                    ],
+                    "parent_repeater": "field_65787719d122c"
                 },
                 {
                     "key": "field_65787831d1233",
@@ -338,5 +338,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1703168168
+    "modified": 1704886943
 }
