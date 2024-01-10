@@ -25,23 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // General - Enable ASCII Printer on random
   printRandomAscii();
 
-  // General - Change tab name on blur
-  if (!isMobile()) {
-    originalTitle = document.title;
-
-    window.addEventListener("focus", () => {
-      document.title = originalTitle;
-    });
-
-    window.addEventListener("blur", () => {
-      document.title = "🎵🎵🎵";
-
-      setTimeout(function () {
-        document.title = originalTitle;
-      }, 450);
-    });
-  }
-
   // General - Enable OpenDyslexic toggle
   function enableDyslexicMode() {
     document
