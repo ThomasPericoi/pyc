@@ -77,6 +77,16 @@
     padding: 0.4rem 2.5rem;
 }
 
+/* Categories */
+.categories {
+    padding-top: var(--spacing-section-outer);
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Pagination */
 .navigation.pagination {
     margin-bottom: var(--spacing-section-inner);

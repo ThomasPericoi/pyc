@@ -33,6 +33,19 @@ endif;
 <!-- Content -->
 <section>
     <div class="container">
+
+        <div class="categories">
+            <?php
+            $categories = get_categories(array(
+                'orderby' => 'name',
+                'order'   => 'ASC'
+            ));
+            foreach ($categories as $category) {
+                echo '<a class="btn btn-secondary" href="' . get_category_link($category->term_id) . '">' . $category->name . '</a>';
+            }
+            ?>
+        </div>
+
         <?php if (have_posts()) : ?>
 
             <div class="post-grid grid-3 posts">
