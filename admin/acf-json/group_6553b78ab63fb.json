@@ -94,7 +94,7 @@
             "name": "youtube",
             "aria-label": "",
             "type": "text",
-            "instructions": "",
+            "instructions": "Uniquement l'ID de la vidéo doit être rempli ici (présente dans le lien de la vidéo). Exemple : tN61l1G6PYE",
             "required": 1,
             "conditional_logic": [
                 [
@@ -135,5 +135,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1715763347
+    "modified": 1715769057
 }

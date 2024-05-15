@@ -23,7 +23,7 @@ $youtube = get_field("youtube");
             </div>
         <?php elseif (($video_type == "youtube") && $youtube) : ?>
             <div class="video-wrapper cover">
-                <iframe width="560" src="https://www.youtube.com/embed/tN61l1G6PYE?si=MkI2pcWWUYt0r_Me" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" src="https://www.youtube.com/embed/<?php echo $youtube; ?>?si=MkI2pcWWUYt0r_Me" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         <?php endif; ?>
     </div>
