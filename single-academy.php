@@ -4,8 +4,10 @@
 <?php
 $title = get_the_title();
 $description = has_excerpt() ? get_the_excerpt() : false;
+$video_type = get_field("video_type");
 $video = get_field("academy_video");
 $video_poster = get_field("academy_video_poster");
+$youtube = get_field("youtube");
 ?>
 <section id="single-academy-hero">
     <div class="container container-sm">
@@ -13,11 +15,15 @@ $video_poster = get_field("academy_video_poster");
         <?php if ($description) : ?>
             <p class="description"><?php echo $description; ?></p>
         <?php endif; ?>
-        <?php if ($video) : ?>
+        <?php if (($video_type == "local") && $video) : ?>
             <div class="video-wrapper cover">
                 <video src="<?php echo $video["url"]; ?>" tabindex="0" <?php if ($video_poster) : ?>poster="<?php echo $video_poster['url']; ?>" <?php endif; ?>>
                 </video>
                 <div class="play"></div>
+            </div>
+        <?php elseif (($video_type == "youtube") && $youtube) : ?>
+            <div class="video-wrapper cover">
+                <iframe width="560" src="https://www.youtube.com/embed/tN61l1G6PYE?si=MkI2pcWWUYt0r_Me" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         <?php endif; ?>
     </div>

@@ -40,3 +40,8 @@
   display: block;
   cursor: pointer;
 }
+
+.video-wrapper iframe {
+  width: 100%;
+  aspect-ratio: 1.85;
+}

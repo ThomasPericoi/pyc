@@ -25,10 +25,10 @@ $description = get_field('archive_academy_description', 'option');
     <div class="container">
         <?php if (have_posts()) : ?>
 
-            <div class="post-grid grid-3 faq">
+            <div class="post-grid grid-3 academy">
                 <?php
                 while (have_posts()) : the_post(); ?>
-                    <a href="<?php esc_url(the_permalink()); ?>" class="grid-element faq">
+                    <a href="<?php esc_url(the_permalink()); ?>" class="grid-element">
                         <?php if (has_post_thumbnail()) : ?>
                             <div class="image video-wrapper">
                                 <?php the_post_thumbnail(); ?>
