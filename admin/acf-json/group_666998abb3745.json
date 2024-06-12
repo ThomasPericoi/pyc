@@ -1,10 +1,10 @@
 {
-    "key": "group_6571f49da4822",
-    "title": "Block - Pricing options",
+    "key": "group_666998abb3745",
+    "title": "Block - Testimonials list options",
     "fields": [
         {
-            "key": "field_6571f49daaf3e",
-            "label": "Pricing",
+            "key": "field_666998abbe9b2",
+            "label": "Testimonials list",
             "name": "",
             "aria-label": "",
             "type": "message",
@@ -16,12 +16,12 @@
                 "class": "",
                 "id": ""
             },
-            "message": "A component to display pricing tables.",
+            "message": "The opinion of someone valuable such as a client.",
             "new_lines": "br",
             "esc_html": 0
         },
         {
-            "key": "field_6571f49daaf54",
+            "key": "field_66699a0fd2080",
             "label": "Content",
             "name": "",
             "aria-label": "",
@@ -39,7 +39,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_6571f49daaf5e",
+            "key": "field_66699979a3be8",
             "label": "Section's title",
             "name": "title",
             "aria-label": "",
@@ -59,7 +59,7 @@
             "append": ""
         },
         {
-            "key": "field_6571f49daaf65",
+            "key": "field_6669997ca3be9",
             "label": "Section's subtitle",
             "name": "subtitle",
             "aria-label": "",
@@ -79,9 +79,9 @@
             "new_lines": "br"
         },
         {
-            "key": "field_65787719d122c",
-            "label": "Tables",
-            "name": "tables",
+            "key": "field_66699cde9524e",
+            "label": "Testimonials element",
+            "name": "testimonials_elements",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -101,9 +101,30 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_65787754d122d",
-                    "label": "Title",
-                    "name": "title",
+                    "key": "field_666998abc6235",
+                    "label": "Content",
+                    "name": "content",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0,
+                    "parent_repeater": "field_66699cde9524e"
+                },
+                {
+                    "key": "field_666998abc9d1d",
+                    "label": "Person",
+                    "name": "person",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -119,37 +140,16 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_65787719d122c"
+                    "parent_repeater": "field_66699cde9524e"
                 },
                 {
-                    "key": "field_657877f5d1231",
-                    "label": "Subtitle",
-                    "name": "subtitle",
-                    "aria-label": "",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 1,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "rows": 2,
-                    "placeholder": "",
-                    "new_lines": "br",
-                    "parent_repeater": "field_65787719d122c"
-                },
-                {
-                    "key": "field_657877a9d1230",
-                    "label": "Image",
-                    "name": "image",
+                    "key": "field_666999202b308",
+                    "label": "Logo",
+                    "name": "logo",
                     "aria-label": "",
                     "type": "image",
                     "instructions": "",
-                    "required": 1,
+                    "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -166,117 +166,12 @@
                     "max_size": "",
                     "mime_types": "",
                     "preview_size": "medium",
-                    "parent_repeater": "field_65787719d122c"
-                },
-                {
-                    "key": "field_65787809d1232",
-                    "label": "Price (Month)",
-                    "name": "price_month",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 1,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "$0",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_65787719d122c"
-                },
-                {
-                    "key": "field_6578784dd1234",
-                    "label": "Price (Year)",
-                    "name": "price_year",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 1,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "$0",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_65787719d122c"
-                },
-                {
-                    "key": "field_65787775d122e",
-                    "label": "Features",
-                    "name": "features",
-                    "aria-label": "",
-                    "type": "repeater",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "layout": "table",
-                    "pagination": 0,
-                    "min": 0,
-                    "max": 0,
-                    "collapsed": "",
-                    "button_label": "Add Row",
-                    "rows_per_page": 20,
-                    "parent_repeater": "field_65787719d122c",
-                    "sub_fields": [
-                        {
-                            "key": "field_65787799d122f",
-                            "label": "Feature",
-                            "name": "feature",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "parent_repeater": "field_65787775d122e"
-                        }
-                    ]
-                },
-                {
-                    "key": "field_65787831d1233",
-                    "label": "Button",
-                    "name": "button",
-                    "aria-label": "",
-                    "type": "link",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "parent_repeater": "field_65787719d122c"
+                    "parent_repeater": "field_66699cde9524e"
                 }
             ]
         },
         {
-            "key": "field_6571f49daaf6d",
+            "key": "field_66699a65c9510",
             "label": "Style",
             "name": "",
             "aria-label": "",
@@ -294,7 +189,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_6571f49daaf74",
+            "key": "field_66699a68c9511",
             "label": "Background",
             "name": "background",
             "aria-label": "",
@@ -325,7 +220,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/pricing"
+                "value": "acf\/testimonials-list"
             }
         ]
     ],
@@ -338,5 +233,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718196859
+    "modified": 1718198319
 }

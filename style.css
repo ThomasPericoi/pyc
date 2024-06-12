@@ -47,9 +47,11 @@ Text Domain: pyc
 @import "./assets/css/blocks/faq-list.css";
 @import "./assets/css/blocks/logos-grid.css";
 @import "./assets/css/blocks/perks-grid.css";
+@import "./assets/css/blocks/posts-grid.css";
 @import "./assets/css/blocks/pricing.css";
 @import "./assets/css/blocks/tabs.css";
 @import "./assets/css/blocks/team-grid.css";
+@import "./assets/css/blocks/testimonials-list.css";
 @import "./assets/css/blocks/timeline.css";
 @import "./assets/css/blocks/triptych.css";
 

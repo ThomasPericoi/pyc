@@ -38,7 +38,7 @@ add_action('init', 'register_custom_post_types');
 // Register blocks
 function register_acf_blocks()
 {
-    $blocks = ["content-2-columns", "faq-list", "logos-grid", "perks-grid", "pricing", "tabs", "team-grid", "timeline", "triptych"];
+    $blocks = ["content-2-columns", "faq-list", "logos-grid", "perks-grid", "posts-grid", "pricing", "tabs", "team-grid", "testimonials-list", "timeline", "triptych"];
 
     foreach ($blocks as $block) {
         register_block_type(__DIR__ . '/blocks/' . $block);

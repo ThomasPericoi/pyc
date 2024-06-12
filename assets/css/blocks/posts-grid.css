@@ -1,0 +1,16 @@
+/* #Posts grid
+--------------------------------------------------------------- */
+.posts-grid-block {
+    padding: var(--spacing-section-outer) 0;
+    position: relative;
+    text-align: center;
+}
+
+.posts-grid-block h2,
+.posts-grid-block .subtitle {
+    text-align: center;
+}
+
+.posts-grid-block .post-grid {
+    padding: 0;
+}

@@ -1,0 +1,15 @@
+{
+    "name": "acf/testimonials-list",
+    "title": "Testimonials list",
+    "description": "The opinion of someone valuable such as a client.",
+    "category": "pyc-block",
+    "icon": "megaphone",
+    "keywords": [
+        "image",
+        "portrait"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "testimonials-list.php"
+    }
+}

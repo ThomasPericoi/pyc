@@ -73,7 +73,7 @@ $style  = implode('; ', $styles);
                         <?php if ($price_year) : ?>
                             <div id="price-year" class="price">
                                 <p class="price_price"><?php echo $price_year; ?></p>
-                                <p class="price_label"><?php echo __("per month (billed annually)", "pyc"); ?></p>
+                                <p class="price_label"><?php echo __("per year", "pyc"); ?></p>
                             </div>
                         <?php endif; ?>
                         <?php if (have_rows('features')) : ?>

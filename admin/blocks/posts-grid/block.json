@@ -1,0 +1,13 @@
+{
+    "name": "acf/posts-grid",
+    "title": "Posts grid",
+    "description": "A grid of blog posts that you can handpick.",
+    "category": "pyc-block",
+    "icon": "edit-large",
+    "keywords": ["content", "post"],
+    "acf": {
+      "mode": "edit",
+      "renderTemplate": "posts-grid.php"
+    }
+  }
+  
