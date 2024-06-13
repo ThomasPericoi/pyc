@@ -35,7 +35,8 @@
   }
 }
 
-.pricing-block .grid .element {
+/* Elements */
+.pricing-block .element {
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -46,7 +47,7 @@
 }
 
 @media screen and (min-width: 992px) {
-  .pricing-block .grid .element:nth-child(4) {
+  .pricing-block .element:nth-child(4) {
     padding: 5rem;
     flex-direction: row;
     grid-column: span 3;
@@ -54,12 +55,12 @@
   }
 }
 
-.pricing-block .grid .title {
+.pricing-block .element .title {
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.pricing-block .grid .element .icon {
+.pricing-block .element .icon {
   width: 80px;
   height: 80px;
   display: flex;
@@ -69,7 +70,7 @@
   border-radius: 50%;
 }
 
-.pricing-block .grid .element img {
+.pricing-block .element .icon img {
   width: 100%;
   height: auto;
   max-width: 65px;
@@ -80,51 +81,64 @@
   display: none;
 }
 
-.pricing-block .grid .price_price {
+.pricing-block .price_price {
   font-size: 30px;
   font-weight: 600;
   color: var(--primary);
 }
 
-.pricing-block .grid .price_label {
+.pricing-block .price_label {
   margin-top: -7px;
   font-style: italic;
 }
 
-.pricing-block .grid .features {
+/* Features */
+.pricing-block .features {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 1rem;
   text-align: left;
 }
 
-.pricing-block .grid .features li {
+.pricing-block .features li {
   z-index: 0;
   display: flex;
   align-items: flex-start;
   gap: 10px;
 }
 
-.pricing-block .grid .features li:before {
+.pricing-block.checked .features li:before {
   content: "✅";
   margin-top: 2px;
   font-size: 0.9em;
 }
 
-.pricing-block [data-toggle="month"]+.grid li.feature-year,
-.pricing-block [data-toggle="year"]+.grid li.feature-month {
-  display: none;
+.pricing-block .features .inner-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
-.pricing-block .grid .features li a {
+.pricing-block .features li h4 {
+  text-transform: uppercase;
+}
+
+.pricing-block .features li a {
+  display: block;
   text-decoration: none;
   color: var(--secondary);
 }
 
-.pricing-block .grid .features li a[href]:hover h4 {
+.pricing-block [data-toggle="month"]+.grid li a.feature-year,
+.pricing-block [data-toggle="year"]+.grid li a.feature-month {
+  display: none;
+}
+
+.pricing-block .features li a[href]:hover {
   text-decoration: underline;
 }
 
-.pricing-block .grid .features li p {
-  margin-top: 3px;
+.pricing-block .element:not(:nth-child(4)) .btn {
+  margin-top: auto;
 }

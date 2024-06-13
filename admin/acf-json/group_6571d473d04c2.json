@@ -97,7 +97,7 @@
             "min": 0,
             "max": 3,
             "collapsed": "",
-            "button_label": "Add Row",
+            "button_label": "Add timeline element",
             "rows_per_page": 20,
             "sub_fields": [
                 {
@@ -233,5 +233,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1703168169
+    "modified": 1718271015
 }

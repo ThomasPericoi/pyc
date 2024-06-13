@@ -16,8 +16,9 @@ $title = get_field('title');
 $subtitle = get_field('subtitle');
 
 $background = get_field('background');
+$list_style = get_field('list_style');
 
-$classes = array('pricing-block');
+$classes = array('pricing-block', $list_style);
 $classes  = implode(' ', $classes);
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
@@ -79,15 +80,21 @@ $style  = implode('; ', $styles);
                         <?php if (have_rows('features')) : ?>
                             <ul class="features">
                                 <?php while (have_rows('features')) : the_row();
-                                    $feature = get_sub_field('feature');
-                                    $subtitle = get_sub_field('subtitle');
-                                    $link = get_sub_field('link');
-                                    $display = get_sub_field('display'); ?>
-                                    <li class="<?php echo $display; ?>">
-                                        <a class="feature" <?php if ($link) : ?>href="<?php echo $link; ?>" <?php endif; ?>>
-                                            <h4 class="h5-size"><?php echo $feature; ?></h4>
-                                            <?php echo $subtitle; ?>
-                                        </a>
+                                    $title = get_sub_field('title'); ?>
+                                    <li>
+                                        <div class="inner-feature">
+                                            <h4 class="h5-size"><?php echo $title; ?></h4>
+                                            <?php if (have_rows('bulletpoints')) : ?>
+                                                <?php while (have_rows('bulletpoints')) : the_row();
+                                                    $content = get_sub_field('content');
+                                                    $link = get_sub_field('link');
+                                                    $display = get_sub_field('display'); ?>
+                                                    <a class="bulletpoint <?php echo $display; ?>" <?php if ($link) : ?>href="<?php echo $link; ?>" <?php endif; ?>>
+                                                        <?php echo $content; ?>
+                                                    </a>
+                                                <?php endwhile; ?>
+                                            <?php endif; ?>
+                                        </div>
                                     </li>
                                 <?php endwhile; ?>
                             </ul>
