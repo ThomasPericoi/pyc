@@ -199,7 +199,7 @@ h6,
   }
 }
 
-main a:not([class]) {
+main a[href]:not([class]) {
   width: unset;
   position: relative;
   font-weight: 600;
@@ -209,7 +209,7 @@ main a:not([class]) {
   transition: color ease 350ms;
 }
 
-main a:not([class]):before {
+main a[href]:not([class]):before {
   content: "";
   top: 35%;
   right: -1px;
@@ -224,7 +224,7 @@ main a:not([class]):before {
   transition: transform ease 350ms;
 }
 
-main a:not([class]):hover:before,
-main a:not([class]):focus:before {
+main a[href]:not([class]):hover:before,
+main a[href]:not([class]):focus:before {
   transform: scaleX(1);
 }

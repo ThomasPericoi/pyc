@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   border: 2px solid var(--secondary);
   border-radius: var(--border-radius);
 }
@@ -75,10 +75,7 @@
   max-width: 65px;
 }
 
-.pricing-block [data-toggle="month"]+.grid .element #price-year {
-  display: none;
-}
-
+.pricing-block [data-toggle="month"]+.grid .element #price-year,
 .pricing-block [data-toggle="year"]+.grid .element #price-month {
   display: none;
 }
@@ -89,6 +86,45 @@
   color: var(--primary);
 }
 
-.pricing-block .grid .features * {
-  font-weight: 600;
+.pricing-block .grid .price_label {
+  margin-top: -7px;
+  font-style: italic;
+}
+
+.pricing-block .grid .features {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.pricing-block .grid .features li {
+  z-index: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.pricing-block .grid .features li:before {
+  content: "✅";
+  margin-top: 2px;
+  font-size: 0.9em;
+}
+
+.pricing-block [data-toggle="month"]+.grid li.feature-year,
+.pricing-block [data-toggle="year"]+.grid li.feature-month {
+  display: none;
+}
+
+.pricing-block .grid .features li a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.pricing-block .grid .features li a[href]:hover h4 {
+  text-decoration: underline;
+}
+
+.pricing-block .grid .features li p {
+  margin-top: 3px;
 }

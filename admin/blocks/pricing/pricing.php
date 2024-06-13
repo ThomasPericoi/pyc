@@ -53,7 +53,7 @@ $style  = implode('; ', $styles);
                     <div class="element table">
                         <div class="header">
                             <?php if ($title) : ?>
-                                <p class="title"><?php echo $title; ?></p>
+                                <h3 class="title"><?php echo $title; ?></h3>
                             <?php endif; ?>
                             <?php if ($subtitle) : ?>
                                 <p><?php echo $subtitle; ?></p>
@@ -79,8 +79,16 @@ $style  = implode('; ', $styles);
                         <?php if (have_rows('features')) : ?>
                             <ul class="features">
                                 <?php while (have_rows('features')) : the_row();
-                                    $feature = get_sub_field('feature'); ?>
-                                    <li><?php echo $feature; ?></li>
+                                    $feature = get_sub_field('feature');
+                                    $subtitle = get_sub_field('subtitle');
+                                    $link = get_sub_field('link');
+                                    $display = get_sub_field('display'); ?>
+                                    <li class="<?php echo $display; ?>">
+                                        <a class="feature" <?php if ($link) : ?>href="<?php echo $link; ?>" <?php endif; ?>>
+                                            <h4 class="h5-size"><?php echo $feature; ?></h4>
+                                            <?php echo $subtitle; ?>
+                                        </a>
+                                    </li>
                                 <?php endwhile; ?>
                             </ul>
                         <?php endif; ?>
