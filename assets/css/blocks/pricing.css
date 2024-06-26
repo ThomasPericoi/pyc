@@ -61,7 +61,7 @@
 }
 
 .pricing-block .element .icon {
-  width: 80px;
+  min-width: 80px;
   height: 80px;
   display: flex;
   align-items: center;
