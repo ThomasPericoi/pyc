@@ -3,3 +3,74 @@
 #related h2 {
     text-align: center;
 }
+
+/* Case Study */
+.single-case-study #content .content {
+    margin-top: 1.5rem;
+}
+
+.single-case-study #content .introduction,
+.single-case-study #content .content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .single-case-study #content .content {
+        margin-top: 5rem;
+        flex-direction: row;
+    }
+
+    .single-case-study #content .introduction {
+        flex-direction: row-reverse;
+    }
+}
+
+.single-case-study .campaign-settings,
+.single-case-study .campaign-results {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .single-case-study .campaign-settings,
+    .single-case-study .campaign-results {
+        max-width: 350px;
+    }
+}
+
+.single-case-study .campaign-settings {
+    background-color: var(--mercury);
+}
+
+.single-case-study .campaign-results {
+    border: 2px solid var(--secondary);
+}
+
+.single-case-study .campaign-settings h2,
+.single-case-study .campaign-results h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.single-case-study .campaign-settings .element {
+    display: flex;
+    gap: 1rem;
+}
+
+.single-case-study .campaign-settings .element img {
+    width: 100%;
+    max-width: 21px;
+    height: auto;
+    margin: unset;
+}

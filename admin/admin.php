@@ -24,7 +24,7 @@ if (function_exists('acf_add_options_page')) {
 // Register post types
 function register_custom_post_types()
 {
-    $post_types = ["academy", "faq", "feature"];
+    $post_types = ["academy", "case-study", "faq", "feature"];
 
     foreach ($post_types as $post_type) {
         include_once(__DIR__ . '/post-types/' . $post_type . '.php');
@@ -38,7 +38,7 @@ add_action('init', 'register_custom_post_types');
 // Register blocks
 function register_acf_blocks()
 {
-    $blocks = ["content-2-columns", "faq-list", "logos-grid", "perks-grid", "posts-grid", "pricing", "tabs", "team-grid", "testimonials-list", "timeline", "triptych"];
+    $blocks = ["content-2-columns", "faq-list", "logos-grid", "perks-grid", "posts-grid", "pricing", "tabs", "team-grid", "testimonials-list", "timeline", "triptych", "videos-grid"];
 
     foreach ($blocks as $block) {
         register_block_type(__DIR__ . '/blocks/' . $block);

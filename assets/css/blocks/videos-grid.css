@@ -1,0 +1,28 @@
+/* #Videos grid
+--------------------------------------------------------------- */
+.videos-grid-block {
+    padding: var(--spacing-section-outer) 0;
+    position: relative;
+    text-align: center;
+}
+
+.videos-grid-block .grid.videos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .videos-grid-block .grid.videos {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .videos-grid-block .play {
+        width: 60px;
+        height: 60px;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+    }
+}

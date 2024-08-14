@@ -1,0 +1,13 @@
+{
+    "name": "acf/video-grid",
+    "title": "Video grid",
+    "description": "A grid of videos.",
+    "category": "pyc-block",
+    "icon": "format-video",
+    "keywords": ["video"],
+    "acf": {
+      "mode": "edit",
+      "renderTemplate": "videos-grid.php"
+    }
+  }
+  
