@@ -120,8 +120,14 @@
                         "id": ""
                     },
                     "choices": {
+                        "budget": "Budget",
+                        "clock": "Clock",
                         "contact-mail": "Mail @",
-                        "contact-house": "Shop"
+                        "contact-house": "Shop",
+                        "music-note": "Music Note",
+                        "network": "Network",
+                        "smartphone": "Smartphone",
+                        "target": "Target"
                     },
                     "default_value": false,
                     "return_format": "value",
@@ -258,5 +264,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1723645498
+    "modified": 1724680822
 }
