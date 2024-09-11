@@ -9,6 +9,7 @@
 .videos-grid-block .grid.videos {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -16,6 +17,10 @@
     .videos-grid-block .grid.videos {
         flex-direction: row;
     }
+}
+
+.videos-grid-block .grid.videos>* {
+    max-width: 450px;
 }
 
 @media screen and (min-width: 768px) {
